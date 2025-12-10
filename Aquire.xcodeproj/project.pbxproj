@@ -7,23 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7215839D2EE7F3CE00CC1DDF /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7215839C2EE7F3CE00CC1DDF /* Models.swift */; };
+		721583A12EE7F43400CC1DDF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583A02EE7F43400CC1DDF /* LoginView.swift */; };
+		721583A32EE7F44900CC1DDF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583A22EE7F44900CC1DDF /* HomeView.swift */; };
+		721583A52EE7F45B00CC1DDF /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583A42EE7F45B00CC1DDF /* BrowseView.swift */; };
+		721583A72EE7F47700CC1DDF /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583A62EE7F47700CC1DDF /* ProductDetailView.swift */; };
+		721583A92EE7F4AF00CC1DDF /* AcquiredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583A82EE7F4AF00CC1DDF /* AcquiredView.swift */; };
+		721583AB2EE7F4C400CC1DDF /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583AA2EE7F4C400CC1DDF /* OrdersView.swift */; };
+		721583AD2EE7F4D700CC1DDF /* ModelQuickLookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721583AC2EE7F4D700CC1DDF /* ModelQuickLookView.swift */; };
+		7239CFCB2EE8494E00934C1D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239CFCA2EE8494E00934C1D /* InfoView.swift */; };
+		7239CFCD2EE850D800934C1D /* DebugOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239CFCC2EE850D800934C1D /* DebugOverlay.swift */; };
+		7239CFCF2EE86EDE00934C1D /* AdminPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7239CFCE2EE86EDE00934C1D /* AdminPanelView.swift */; };
+		7239CFD12EE87E9C00934C1D /* FoundationDock.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 7239CFD02EE87E9C00934C1D /* FoundationDock.usdz */; };
 		72C9DF0F2EE7BFA800F3E164 /* AquireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9DF0E2EE7BFA800F3E164 /* AquireApp.swift */; };
-		72C9DF112EE7BFA800F3E164 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9DF102EE7BFA800F3E164 /* Persistence.swift */; };
 		72C9DF142EE7BFA800F3E164 /* Aquire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72C9DF122EE7BFA800F3E164 /* Aquire.xcdatamodeld */; };
-		72C9DF162EE7BFA800F3E164 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C9DF152EE7BFA800F3E164 /* ContentView.swift */; };
 		72C9DF182EE7BFAA00F3E164 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C9DF172EE7BFAA00F3E164 /* Assets.xcassets */; };
 		72C9DF1C2EE7BFAA00F3E164 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72C9DF1B2EE7BFAA00F3E164 /* Preview Assets.xcassets */; };
+		72D341F72EE7F5B2007D90EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D341F62EE7F5B2007D90EA /* ContentView.swift */; };
+		72D341F92EE7F5EF007D90EA /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D341F82EE7F5EF007D90EA /* StoreModel.swift */; };
+		72D341FB2EE805FA007D90EA /* UIHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D341FA2EE805FA007D90EA /* UIHelpers.swift */; };
+		72D341FD2EE807DC007D90EA /* ApplePayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D341FC2EE807DC007D90EA /* ApplePayButton.swift */; };
+		72D342002EE8149D007D90EA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D341FF2EE8149D007D90EA /* SettingsView.swift */; };
+		72D342022EE820B3007D90EA /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D342012EE820B3007D90EA /* WishlistView.swift */; };
+		72F092AF2EE8B84200007252 /* AdvancaLink.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 72F092AE2EE8B84200007252 /* AdvancaLink.usdz */; };
+		DAA432DC2EE911690040BE9C /* DebugPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA432DB2EE911690040BE9C /* DebugPanelView.swift */; };
+		DAA432E02EE928910040BE9C /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA432DF2EE928910040BE9C /* ProductCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7215839C2EE7F3CE00CC1DDF /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		721583A02EE7F43400CC1DDF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		721583A22EE7F44900CC1DDF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		721583A42EE7F45B00CC1DDF /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseView.swift; sourceTree = "<group>"; };
+		721583A62EE7F47700CC1DDF /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		721583A82EE7F4AF00CC1DDF /* AcquiredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcquiredView.swift; sourceTree = "<group>"; };
+		721583AA2EE7F4C400CC1DDF /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		721583AC2EE7F4D700CC1DDF /* ModelQuickLookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelQuickLookView.swift; sourceTree = "<group>"; };
+		7239CFCA2EE8494E00934C1D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		7239CFCC2EE850D800934C1D /* DebugOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugOverlay.swift; sourceTree = "<group>"; };
+		7239CFCE2EE86EDE00934C1D /* AdminPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPanelView.swift; sourceTree = "<group>"; };
+		7239CFD02EE87E9C00934C1D /* FoundationDock.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = FoundationDock.usdz; sourceTree = "<group>"; };
 		72C9DF0B2EE7BFA800F3E164 /* Aquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aquire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72C9DF0E2EE7BFA800F3E164 /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
-		72C9DF102EE7BFA800F3E164 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		72C9DF132EE7BFA800F3E164 /* Aquire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Aquire.xcdatamodel; sourceTree = "<group>"; };
-		72C9DF152EE7BFA800F3E164 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72C9DF172EE7BFAA00F3E164 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72C9DF192EE7BFAA00F3E164 /* Aquire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aquire.entitlements; sourceTree = "<group>"; };
 		72C9DF1B2EE7BFAA00F3E164 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		72D341F62EE7F5B2007D90EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72D341F82EE7F5EF007D90EA /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		72D341FA2EE805FA007D90EA /* UIHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelpers.swift; sourceTree = "<group>"; };
+		72D341FC2EE807DC007D90EA /* ApplePayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayButton.swift; sourceTree = "<group>"; };
+		72D341FE2EE80A62007D90EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72D341FF2EE8149D007D90EA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		72D342012EE820B3007D90EA /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		72F092AE2EE8B84200007252 /* AdvancaLink.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = AdvancaLink.usdz; sourceTree = "<group>"; };
+		DAA432DB2EE911690040BE9C /* DebugPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugPanelView.swift; sourceTree = "<group>"; };
+		DAA432DF2EE928910040BE9C /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +95,30 @@
 		72C9DF0D2EE7BFA800F3E164 /* Aquire */ = {
 			isa = PBXGroup;
 			children = (
+				7239CFCC2EE850D800934C1D /* DebugOverlay.swift */,
+				72D342012EE820B3007D90EA /* WishlistView.swift */,
+				72D341FE2EE80A62007D90EA /* Info.plist */,
+				72D341FF2EE8149D007D90EA /* SettingsView.swift */,
+				7239CFCE2EE86EDE00934C1D /* AdminPanelView.swift */,
+				72D341FC2EE807DC007D90EA /* ApplePayButton.swift */,
 				72C9DF0E2EE7BFA800F3E164 /* AquireApp.swift */,
-				72C9DF102EE7BFA800F3E164 /* Persistence.swift */,
-				72C9DF152EE7BFA800F3E164 /* ContentView.swift */,
+				7215839C2EE7F3CE00CC1DDF /* Models.swift */,
+				72D341F62EE7F5B2007D90EA /* ContentView.swift */,
+				DAA432DB2EE911690040BE9C /* DebugPanelView.swift */,
+				721583A02EE7F43400CC1DDF /* LoginView.swift */,
+				721583A22EE7F44900CC1DDF /* HomeView.swift */,
+				721583A42EE7F45B00CC1DDF /* BrowseView.swift */,
+				721583A82EE7F4AF00CC1DDF /* AcquiredView.swift */,
+				721583A62EE7F47700CC1DDF /* ProductDetailView.swift */,
+				DAA432DF2EE928910040BE9C /* ProductCard.swift */,
+				72D341F82EE7F5EF007D90EA /* StoreModel.swift */,
+				72D341FA2EE805FA007D90EA /* UIHelpers.swift */,
+				721583AA2EE7F4C400CC1DDF /* OrdersView.swift */,
+				721583AC2EE7F4D700CC1DDF /* ModelQuickLookView.swift */,
+				7239CFCA2EE8494E00934C1D /* InfoView.swift */,
 				72C9DF172EE7BFAA00F3E164 /* Assets.xcassets */,
+				72F092AE2EE8B84200007252 /* AdvancaLink.usdz */,
+				7239CFD02EE87E9C00934C1D /* FoundationDock.usdz */,
 				72C9DF192EE7BFAA00F3E164 /* Aquire.entitlements */,
 				72C9DF122EE7BFA800F3E164 /* Aquire.xcdatamodeld */,
 				72C9DF1A2EE7BFAA00F3E164 /* Preview Content */,
@@ -103,7 +162,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 2620;
 				TargetAttributes = {
 					72C9DF0A2EE7BFA800F3E164 = {
 						CreatedOnToolsVersion = 14.2;
@@ -133,8 +192,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F092AF2EE8B84200007252 /* AdvancaLink.usdz in Resources */,
 				72C9DF1C2EE7BFAA00F3E164 /* Preview Assets.xcassets in Resources */,
 				72C9DF182EE7BFAA00F3E164 /* Assets.xcassets in Resources */,
+				7239CFD12EE87E9C00934C1D /* FoundationDock.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +206,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7239CFCD2EE850D800934C1D /* DebugOverlay.swift in Sources */,
+				72D342002EE8149D007D90EA /* SettingsView.swift in Sources */,
+				721583AB2EE7F4C400CC1DDF /* OrdersView.swift in Sources */,
+				72D341F72EE7F5B2007D90EA /* ContentView.swift in Sources */,
+				721583AD2EE7F4D700CC1DDF /* ModelQuickLookView.swift in Sources */,
+				7239CFCB2EE8494E00934C1D /* InfoView.swift in Sources */,
+				721583A52EE7F45B00CC1DDF /* BrowseView.swift in Sources */,
+				721583A12EE7F43400CC1DDF /* LoginView.swift in Sources */,
+				72D341F92EE7F5EF007D90EA /* StoreModel.swift in Sources */,
+				721583A32EE7F44900CC1DDF /* HomeView.swift in Sources */,
 				72C9DF0F2EE7BFA800F3E164 /* AquireApp.swift in Sources */,
+				7239CFCF2EE86EDE00934C1D /* AdminPanelView.swift in Sources */,
 				72C9DF142EE7BFA800F3E164 /* Aquire.xcdatamodeld in Sources */,
-				72C9DF162EE7BFA800F3E164 /* ContentView.swift in Sources */,
-				72C9DF112EE7BFA800F3E164 /* Persistence.swift in Sources */,
+				72D341FB2EE805FA007D90EA /* UIHelpers.swift in Sources */,
+				7215839D2EE7F3CE00CC1DDF /* Models.swift in Sources */,
+				72D341FD2EE807DC007D90EA /* ApplePayButton.swift in Sources */,
+				721583A92EE7F4AF00CC1DDF /* AcquiredView.swift in Sources */,
+				DAA432DC2EE911690040BE9C /* DebugPanelView.swift in Sources */,
+				721583A72EE7F47700CC1DDF /* ProductDetailView.swift in Sources */,
+				72D342022EE820B3007D90EA /* WishlistView.swift in Sources */,
+				DAA432E02EE928910040BE9C /* ProductCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +237,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -188,9 +267,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PULJN6655X;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -208,6 +290,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -217,6 +300,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -246,9 +330,12 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PULJN6655X;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -259,6 +346,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -269,33 +357,61 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = Aquire/Aquire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = BETA;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Aquire/Preview Content\"";
-				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = YES;
+				ENABLE_RESOURCE_ACCESS_USB = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aquire/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aquire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = Foundation.Aquire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,33 +423,61 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				AUTOMATION_APPLE_EVENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = Aquire/Aquire.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = BETA;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Aquire/Preview Content\"";
-				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = YES;
+				ENABLE_RESOURCE_ACCESS_USB = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Aquire/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aquire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = Foundation.Aquire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
