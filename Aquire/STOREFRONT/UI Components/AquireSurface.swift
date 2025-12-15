@@ -2,9 +2,14 @@
 //  AquireSurface.swift
 //  Aquire
 //
-//  Created by Zero on 12/12/25.
+//  Created by Zero on 12/15/25.
 //
 
+
+//
+//  AquireSurface.swift
+//  Aquire
+//
 
 import SwiftUI
 
@@ -13,54 +18,40 @@ struct AquireSurface<Content: View>: View {
     let padding: CGFloat
     let content: Content
 
-    @EnvironmentObject private var gates: FeatureGates
+    @EnvironmentObject private var performance: PerformanceProfile
 
-    init(cornerRadius: CGFloat = 22, padding: CGFloat = 16, @ViewBuilder content: () -> Content) {
+    init(
+        cornerRadius: CGFloat = 22,
+        padding: CGFloat = 16,
+        @ViewBuilder content: () -> Content
+    ) {
         self.cornerRadius = cornerRadius
         self.padding = padding
         self.content = content()
     }
 
     var body: some View {
-        content
-            .padding(padding)
-            .background(background)
-            .overlay(border)
-            .shadow(color: .black.opacity(gates.gates.allowShadows ? 0.35 : 0.0),
-                    radius: gates.gates.allowShadows ? 18 : 0,
-                    x: 0,
-                    y: gates.gates.allowShadows ? 10 : 0)
-    }
-
-    private var background: some View {
         ZStack {
             RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(Color.white.opacity(0.08))
-
-            if gates.gates.allowHeavyBlur {
-                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                    .fill(.ultraThinMaterial)
-                    .opacity(0.75)
-            }
-
-            if gates.gates.allowHighlightOverlay {
-                LinearGradient(
-                    colors: [
-                        Color.white.opacity(0.18),
-                        Color.white.opacity(0.04),
-                        Color.clear
-                    ],
-                    startPoint: .topLeading,
-                    endPoint: .bottomTrailing
+                .fill(
+                    Color.white.opacity(
+                        performance.currentTuning.blurStrength > 0 ? 0.12 : 0.06
+                    )
                 )
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-                .blendMode(.screen)
-            }
-        }
-    }
 
-    private var border: some View {
-        RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-            .stroke(Color.white.opacity(0.18), lineWidth: 0.9)
+            content
+                .padding(padding)
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .stroke(Color.white.opacity(0.18), lineWidth: 0.8)
+        )
+        .shadow(
+            color: Color.black.opacity(
+                performance.currentTuning.shadowStrength * 0.25
+            ),
+            radius: performance.currentTuning.shadowStrength * 12,
+            y: performance.currentTuning.shadowStrength * 6
+        )
     }
 }
