@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 90;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA6A90412EEBCBAF00EB430A /* AquireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation Aquire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DA6A904D2EEBCBAF00EB430A /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: Config/Aquire.entitlements",
+				Assets/AdvancaLink.usdz,
+				Assets/Assets.xcassets,
+				Assets/FoundationDock.usdz,
+				Config/Aquire.xcdatamodeld,
+				Core/AppRoot.swift,
+				Core/ContentView.swift,
+				Core/FeatureGates.swift,
+				Core/Models.swift,
+				Core/ModelViewerSheet.swift,
+				Core/NarrativeModels.swift,
+				Core/ProductCatalog.swift,
+				Core/ProductDockBar.swift,
+				Core/StartupWarmup.swift,
+				Core/StorefrontDetailView.swift,
+				Core/StorefrontRoute.swift,
+				Core/StorefrontRouter.swift,
+				Core/StorefrontShellView.swift,
+				Core/StoreModel.swift,
+				Screens/Acquired/AcquiredView.swift,
+				Screens/Auth/LoginView.swift,
+				Screens/Browse/BrowseView.swift,
+				Screens/Browse/ProductDetailView.swift,
+				Screens/Home/HomeView.swift,
+				Screens/Info/InfoView.swift,
+				Screens/Info/PatchNotes.swift,
+				Screens/Info/PatchNotesView.swift,
+				Screens/Info/StoryPagerView.swift,
+				Screens/ModelQuickLookView.swift,
+				Screens/Orders/OrdersView.swift,
+				Screens/Settings/AdminPanelView.swift,
+				Screens/Settings/DebugPanelView.swift,
+				Screens/Settings/SettingsView.swift,
+				Screens/Wishlist/WishlistView.swift,
+				"UI Components/ApplePayButton.swift",
+				"UI Components/AquireHeader.swift",
+				"UI Components/AquireHeroCard.swift",
+				"UI Components/AquireProductRow.swift",
+				"UI Components/AquireStatTile.swift",
+				"UI Components/AquireSurface.swift",
+				"UI Components/DebugOverlay.swift",
+				"UI Components/EmptyStateCard.swift",
+				"UI Components/ProductCard.swift",
+				"UI Components/ScreenScaffold.swift",
+				"UI Components/StatusPill.swift",
+				"UI Components/UIHelpers.swift",
+				Utilities/Extentions.swift,
+				Utilities/SearchBarView.swift,
+			);
+			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
+		};
+		DA6A90672EEBD29E00EB430A /* Exceptions for "ADMINFRONT" folder in "Foundation Aquire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/AdminFrontShellView.swift,
+			);
+			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
+		};
+		DA6A90682EEBD29E00EB430A /* Exceptions for "INTROPHASE" folder in "Foundation Aquire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/AppProfile.swift,
+				Core/PerformanceProfile.swift,
+				Core/Telemetry.swift,
+				Screens/OnboardingView.swift,
+			);
+			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
+		};
+		DA6A90692EEBD29E00EB430A /* Exceptions for "CLIENTFRONT" folder in "Foundation Aquire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/ClientFrontShellView.swift,
+			);
+			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
+		};
+		DA6A906C2EEBD2B700EB430A /* Exceptions for "HOMEFRONT" folder in "Foundation Aquire" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/RootShellView.swift,
+				Core/SessionModel.swift,
+			);
+			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA6A906C2EEBD2B700EB430A /* Exceptions for "HOMEFRONT" folder in "Foundation Aquire" target */,
+			);
+			path = HOMEFRONT;
+			sourceTree = "<group>";
+		};
+		DA6A8FAD2EEBC94400EB430A /* INTROPHASE */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA6A90682EEBD29E00EB430A /* Exceptions for "INTROPHASE" folder in "Foundation Aquire" target */,
+			);
+			path = INTROPHASE;
+			sourceTree = "<group>";
+		};
+		DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA6A90692EEBD29E00EB430A /* Exceptions for "CLIENTFRONT" folder in "Foundation Aquire" target */,
+			);
+			path = CLIENTFRONT;
+			sourceTree = "<group>";
+		};
+		DA6A902F2EEBCBAF00EB430A /* STOREFRONT */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA6A904D2EEBCBAF00EB430A /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */,
+			);
+			path = STOREFRONT;
+			sourceTree = "<group>";
+		};
+		DA6A90602EEBD16200EB430A /* ADMINFRONT */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DA6A90672EEBD29E00EB430A /* Exceptions for "ADMINFRONT" folder in "Foundation Aquire" target */,
+			);
+			path = ADMINFRONT;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		72C9DF082EE7BFA800F3E164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72C9DF022EE7BFA800F3E164 = {
+			isa = PBXGroup;
+			children = (
+				72C9DF0D2EE7BFA800F3E164 /* Aquire */,
+				72C9DF0C2EE7BFA800F3E164 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		72C9DF0C2EE7BFA800F3E164 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72C9DF0D2EE7BFA800F3E164 /* Aquire */ = {
+			isa = PBXGroup;
+			children = (
+				DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */,
+				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
+				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
+				DA6A902F2EEBCBAF00EB430A /* STOREFRONT */,
+				DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */,
+				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
+			);
+			path = Aquire;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72C9DF1F2EE7BFAA00F3E164 /* Build configuration list for PBXNativeTarget "Foundation Aquire" */;
+			buildPhases = (
+				72C9DF072EE7BFA800F3E164 /* Sources */,
+				72C9DF082EE7BFA800F3E164 /* Frameworks */,
+				72C9DF092EE7BFA800F3E164 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = "Foundation Aquire";
+			productName = Aquire;
+			productReference = 72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		72C9DF032EE7BFA800F3E164 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					72C9DF0A2EE7BFA800F3E164 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 72C9DF062EE7BFA800F3E164 /* Build configuration list for PBXProject "Foundation Aquire" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 72C9DF022EE7BFA800F3E164;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = 72C9DF0C2EE7BFA800F3E164 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		72C9DF092EE7BFA800F3E164 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		72C9DF072EE7BFA800F3E164 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				DA6A90412EEBCBAF00EB430A /* AquireApp.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		72C9DF1D2EE7BFAA00F3E164 /* Debug configuration for PBXProject "Foundation Aquire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		72C9DF1E2EE7BFAA00F3E164 /* Release configuration for PBXProject "Foundation Aquire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/";
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		72C9DF202EE7BFAA00F3E164 /* Debug configuration for PBXNativeTarget "Foundation Aquire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = Alpha;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = YES;
+				ENABLE_RESOURCE_ACCESS_USB = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foundation Aquire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = /Users/zero/Desktop/AppIcon.icon;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foundation.Aquire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Debug;
+		};
+		72C9DF212EE7BFAA00F3E164 /* Release configuration for PBXNativeTarget "Foundation Aquire" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = Alpha;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = PULJN6655X;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_RESOURCE_ACCESS_AUDIO_INPUT = YES;
+				ENABLE_RESOURCE_ACCESS_BLUETOOTH = YES;
+				ENABLE_RESOURCE_ACCESS_CALENDARS = YES;
+				ENABLE_RESOURCE_ACCESS_CAMERA = YES;
+				ENABLE_RESOURCE_ACCESS_CONTACTS = YES;
+				ENABLE_RESOURCE_ACCESS_LOCATION = YES;
+				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
+				ENABLE_RESOURCE_ACCESS_PRINTING = YES;
+				ENABLE_RESOURCE_ACCESS_USB = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Foundation Aquire";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = /Users/zero/Desktop/AppIcon.icon;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.6;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Foundation.Aquire;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				REGISTER_APP_GROUPS = YES;
+				RUNTIME_EXCEPTION_ALLOW_DYLD_ENVIRONMENT_VARIABLES = NO;
+				RUNTIME_EXCEPTION_ALLOW_JIT = NO;
+				RUNTIME_EXCEPTION_ALLOW_UNSIGNED_EXECUTABLE_MEMORY = NO;
+				RUNTIME_EXCEPTION_DEBUGGING_TOOL = NO;
+				RUNTIME_EXCEPTION_DISABLE_EXECUTABLE_PAGE_PROTECTION = NO;
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = NO;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,3";
+				TVOS_DEPLOYMENT_TARGET = 26.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		72C9DF062EE7BFA800F3E164 /* Build configuration list for PBXProject "Foundation Aquire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C9DF1D2EE7BFAA00F3E164 /* Debug configuration for PBXProject "Foundation Aquire" */,
+				72C9DF1E2EE7BFAA00F3E164 /* Release configuration for PBXProject "Foundation Aquire" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		72C9DF1F2EE7BFAA00F3E164 /* Build configuration list for PBXNativeTarget "Foundation Aquire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72C9DF202EE7BFAA00F3E164 /* Debug configuration for PBXNativeTarget "Foundation Aquire" */,
+				72C9DF212EE7BFAA00F3E164 /* Release configuration for PBXNativeTarget "Foundation Aquire" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 72C9DF032EE7BFA800F3E164 /* Project object */;
+}

@@ -15,6 +15,9 @@ struct Product: Identifiable, Hashable {
 
     /// Optional USDZ file name (without extension) for 3D preview.
     let modelName: String?
+
+    /// Optional bundled thumbnail resource name (without extension). If present we preload and cache this image.
+    let thumbnailName: String? = nil
 }
 
 struct Order: Identifiable {

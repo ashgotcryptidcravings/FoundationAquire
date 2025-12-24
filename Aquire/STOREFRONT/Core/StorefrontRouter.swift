@@ -2,17 +2,34 @@
 //  StorefrontRouter.swift
 //  Aquire
 //
-//  Created by Zero on 12/12/25.
-//
 
-
+import Foundation
 import SwiftUI
 
+@MainActor
 final class StorefrontRouter: ObservableObject {
-    @Published var selected: StorefrontRoute = .home
+    @Published var route: StorefrontRoute = .home
 
-    // Future: deep links, sheets, navigation stacks, etc.
-    func go(_ route: StorefrontRoute) {
-        selected = route
+    // Optional: present product detail from anywhere via sheet
+    @Published var presentedProductKey: String? = nil
+
+    func home() { route = .home }
+    func browse() { route = .browse }
+    func wishlist() { route = .wishlist }
+    func acquired() { route = .acquired }
+    func orders() { route = .orders }
+    func info() { route = .info }
+    func settings() { route = .settings }
+
+    func detail(_ product: Product) {
+        presentedProductKey = ProductCatalog.key(for: product)
+    }
+
+    func detail(key: String) {
+        presentedProductKey = key
+    }
+
+    func dismissDetail() {
+        presentedProductKey = nil
     }
 }

@@ -2,50 +2,68 @@
 //  AquireHeroCard.swift
 //  Aquire
 //
-//  Created by Zero on 12/12/25.
-//
-
 
 import SwiftUI
 
-struct AquireHeroCard: View {
+struct AquireHeroCard<Content: View>: View {
     let title: String
     let subtitle: String
-    let icon: String
+    let systemImage: String
+    let content: Content
 
-    @EnvironmentObject private var gates: FeatureGates
+    init(
+        title: String,
+        subtitle: String,
+        systemImage: String,
+        @ViewBuilder content: () -> Content
+    ) {
+        self.title = title
+        self.subtitle = subtitle
+        self.systemImage = systemImage
+        self.content = content()
+    }
+
+    /// Convenience: lets you call it with NO trailing closure.
+    init(
+        title: String,
+        subtitle: String,
+        systemImage: String
+    ) where Content == EmptyView {
+        self.title = title
+        self.subtitle = subtitle
+        self.systemImage = systemImage
+        self.content = EmptyView()
+    }
 
     var body: some View {
         AquireSurface(cornerRadius: 28, padding: 18) {
-            HStack(alignment: .center, spacing: 16) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .fill(Color.white.opacity(0.10))
-                        .frame(width: 54, height: 54)
+            VStack(alignment: .leading, spacing: 12) {
+                HStack(spacing: 12) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 18, style: .continuous)
+                            .fill(Color.white.opacity(0.10))
+                            .frame(width: 54, height: 54)
 
-                    Image(systemName: icon)
-                        .font(.system(size: 22, weight: .bold))
-                        .foregroundColor(.white.opacity(0.92))
+                        Image(systemName: systemImage)
+                            .font(.system(size: 22, weight: .bold))
+                            .foregroundStyle(.white.opacity(0.92))
+                    }
+
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(title)
+                            .font(.system(size: 18, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+
+                        Text(subtitle)
+                            .font(.system(size: 13, weight: .semibold, design: .rounded))
+                            .foregroundColor(.white.opacity(0.7))
+                            .lineLimit(2)
+                    }
+
+                    Spacer()
                 }
 
-                VStack(alignment: .leading, spacing: 6) {
-                    Text(title)
-                        .font(.system(size: 18, weight: .bold, design: .rounded))
-                        .foregroundColor(.white)
-
-                    Text(subtitle)
-                        .font(.system(size: 13, weight: .regular, design: .rounded))
-                        .foregroundColor(.white.opacity(0.7))
-                        .lineLimit(2)
-                }
-
-                Spacer()
-
-                if gates.gates.allowHighlightOverlay {
-                    Image(systemName: "chevron.right")
-                        .font(.system(size: 14, weight: .bold))
-                        .foregroundColor(.white.opacity(0.6))
-                }
+                content
             }
         }
     }

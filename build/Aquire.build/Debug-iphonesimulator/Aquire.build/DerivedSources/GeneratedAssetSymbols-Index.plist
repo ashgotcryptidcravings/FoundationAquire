@@ -1,0 +1,1124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACColorNameAccentColor</string>
+			<key>relativePath</key>
+			<string>./AccentColor.colorset</string>
+			<key>swiftSymbol</key>
+			<string>accent</string>
+		</dict>
+	</array>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearDark835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearDark-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearDark835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSClearLight835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-ClearLight-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSClearLight835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDark835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Dark-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDark835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSDefault835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-Default-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSDefault835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedDark835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedDark-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedDark835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight1024X1024</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-1024x1024.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight1024X1024</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight128X128</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-128x128.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight128X128</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight16X16</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-16x16.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight16X16</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight20X20</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-20x20.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight20X20</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight256X256</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-256x256.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight256X256</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight38X38</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-38x38.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight38X38</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight512X512</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-512x512.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight512X512</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight60X60</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-60x60.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight60X60</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight64X64</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-64x64.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight64X64</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight68X68</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-68x68.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight68X68</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight76X76</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-76x76.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight76X76</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconIOSTintedLight835X835</string>
+			<key>relativePath</key>
+			<string>./AppIcon-iOS-TintedLight-83.5x83.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconIOSTintedLight835X835</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault1088X1088</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-1088x1088.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault1088X1088</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault108X108</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-108x108.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault108X108</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault117X117</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-117x117.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault117X117</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault129X129</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-129x129.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault129X129</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault22X22</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-22x22.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault22X22</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault24X24</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-24x24.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault24X24</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault275X275</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-27.5x27.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault275X275</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault29X29</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-29x29.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault29X29</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault30X30</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-30x30.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault30X30</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault32X32</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-32x32.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault32X32</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault33X33</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-33x33.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault33X33</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault40X40</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-40x40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault40X40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault435X435</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-43.5x43.5.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault435X435</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault44X44</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-44x44.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault44X44</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault46X46</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-46x46.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault46X46</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault50X50</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-50x50.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault50X50</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault51X51</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-51x51.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault51X51</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault54X54</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-54x54.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault54X54</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault86X86</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-86x86.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault86X86</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Assets/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAppIconWatchOSDefault98X98</string>
+			<key>relativePath</key>
+			<string>./AppIcon-watchOS-Default-98x98.imageset</string>
+			<key>swiftSymbol</key>
+			<string>appIconWatchOSDefault98X98</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

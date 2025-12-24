@@ -1,0 +1,40 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Core/ProductDockBar.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Saved",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "Owned",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Buy",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 38
+        }
+      }
+    ]
+  },
+  "version": 1
+}

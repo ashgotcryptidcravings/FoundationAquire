@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Info/InfoView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "About Aquire",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aquire is a curated catalog, wishlist, acquisition log, and order timeline for Foundation hardware.",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 18
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,64 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Browse/ProductDetailView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Firmware tools unlock once you own the device.",
+        "location": {
+          "startingColumn": 44,
+          "startingLine": 101
+        }
+      },
+      {
+        "comment": "",
+        "key": "Purchase to unlock device management.",
+        "location": {
+          "startingColumn": 36,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Firmware",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "v1.0 (placeholder)",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Updating…",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "Check for Updates",
+        "location": {
+          "startingColumn": 79,
+          "startingLine": 82
+        }
+      },
+      {
+        "comment": "",
+        "key": "About",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 110
+        }
+      }
+    ]
+  },
+  "version": 1
+}

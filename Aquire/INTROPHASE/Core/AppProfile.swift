@@ -1,21 +1,9 @@
-//
-//  AppProfile.swift
-//  Aquire
-//
-//  Created by Zero on 12/15/25.
-//
-
-
 import SwiftUI
 
-/// User-facing “how should the app feel” profile.
-/// This is intentionally an ObservableObject because the app observes it everywhere.
 @MainActor
 final class AppProfile: ObservableObject {
 
-    // MARK: - User Experience
-
-    enum UserExperience: String, CaseIterable, Identifiable {
+    enum Experience: String, CaseIterable, Identifiable {
         case performance
         case balanced
         case cinematic
@@ -39,12 +27,9 @@ final class AppProfile: ObservableObject {
         }
     }
 
-    /// Back-compat alias because your app code uses `AppProfile.Experience`
-    typealias Experience = UserExperience
+    typealias UserExperience = Experience
 
-    // MARK: - Stored properties
-
-    @Published var experience: UserExperience {
+    @Published var experience: Experience {
         didSet { defaults.set(experience.rawValue, forKey: Keys.experience) }
     }
 
@@ -59,16 +44,16 @@ final class AppProfile: ObservableObject {
     private let defaults: UserDefaults
 
     private struct Keys {
-        static let experience              = "Aquire.profile.experience"
-        static let telemetryOptIn          = "Aquire.profile.telemetryOptIn"
-        static let hasCompletedOnboarding  = "Aquire.profile.hasCompletedOnboarding"
+        static let experience             = "Aquire.profile.experience"
+        static let telemetryOptIn         = "Aquire.profile.telemetryOptIn"
+        static let hasCompletedOnboarding = "Aquire.profile.hasCompletedOnboarding"
     }
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
 
         if let raw = defaults.string(forKey: Keys.experience),
-           let exp = UserExperience(rawValue: raw) {
+           let exp = Experience(rawValue: raw) {
             self.experience = exp
         } else {
             self.experience = .balanced

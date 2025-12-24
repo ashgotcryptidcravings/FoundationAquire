@@ -2,14 +2,6 @@
 //  AquireSurface.swift
 //  Aquire
 //
-//  Created by Zero on 12/15/25.
-//
-
-
-//
-//  AquireSurface.swift
-//  Aquire
-//
 
 import SwiftUI
 
@@ -18,10 +10,8 @@ struct AquireSurface<Content: View>: View {
     let padding: CGFloat
     let content: Content
 
-    @EnvironmentObject private var performance: PerformanceProfile
-
     init(
-        cornerRadius: CGFloat = 22,
+        cornerRadius: CGFloat = 24,
         padding: CGFloat = 16,
         @ViewBuilder content: () -> Content
     ) {
@@ -31,27 +21,20 @@ struct AquireSurface<Content: View>: View {
     }
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(
-                    Color.white.opacity(
-                        performance.currentTuning.blurStrength > 0 ? 0.12 : 0.06
-                    )
-                )
-
-            content
-                .padding(padding)
-        }
-        .overlay(
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .stroke(Color.white.opacity(0.18), lineWidth: 0.8)
-        )
-        .shadow(
-            color: Color.black.opacity(
-                performance.currentTuning.shadowStrength * 0.25
-            ),
-            radius: performance.currentTuning.shadowStrength * 12,
-            y: performance.currentTuning.shadowStrength * 6
-        )
+        content
+            .padding(padding)
+            // Inline a Liquid Glass-like treatment to avoid cross-file ordering issues.
+            .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                    .fill(Color.white.opacity(0.06))
+                    .blendMode(.overlay)
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                    .stroke(Color.white.opacity(0.10), lineWidth: 1)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            .shadow(color: Color.black.opacity(0.18), radius: 8, x: 0, y: 4)
     }
 }

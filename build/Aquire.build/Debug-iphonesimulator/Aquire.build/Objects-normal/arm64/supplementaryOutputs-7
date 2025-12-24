@@ -1,0 +1,100 @@
+{
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/ModelQuickLookView.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ModelQuickLookView.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ModelQuickLookView.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ModelQuickLookView.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ModelQuickLookView.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ModelQuickLookView.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Wishlist/WishlistView.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/WishlistView.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/WishlistView.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/WishlistView.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/WishlistView.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/WishlistView.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/ApplePayButton.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ApplePayButton.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ApplePayButton.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ApplePayButton.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ApplePayButton.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ApplePayButton.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/AquireHeader.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeader.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeader.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeader.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeader.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeader.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/AquireHeroCard.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeroCard.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeroCard.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeroCard.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeroCard.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireHeroCard.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/AquireProductRow.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireProductRow.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireProductRow.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireProductRow.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireProductRow.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireProductRow.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/AquireStatTile.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireStatTile.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireStatTile.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireStatTile.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireStatTile.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireStatTile.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/AquireSurface.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireSurface.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireSurface.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireSurface.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireSurface.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/AquireSurface.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/DebugOverlay.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/DebugOverlay.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/DebugOverlay.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/DebugOverlay.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/DebugOverlay.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/DebugOverlay.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/EmptyStateCard.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/EmptyStateCard.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/EmptyStateCard.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/EmptyStateCard.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/EmptyStateCard.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/EmptyStateCard.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/ProductCard.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ProductCard.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ProductCard.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ProductCard.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ProductCard.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ProductCard.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/ScreenScaffold.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ScreenScaffold.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ScreenScaffold.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ScreenScaffold.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ScreenScaffold.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/ScreenScaffold.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/StatusPill.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/StatusPill.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/StatusPill.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/StatusPill.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/StatusPill.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/StatusPill.swiftdeps"
+  },
+  "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/UI Components/UIHelpers.swift" : {
+    "const-values" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/UIHelpers.swiftconstvalues",
+    "dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/UIHelpers.d",
+    "diagnostics" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/UIHelpers.dia",
+    "object" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/UIHelpers.o",
+    "swift-dependencies" : "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/Objects-normal/arm64/UIHelpers.swiftdeps"
+  }
+}

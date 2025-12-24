@@ -2,35 +2,27 @@
 //  Telemetry.swift
 //  Aquire
 //
-//  Created by Zero on 12/12/25.
-//
 
-
+import Foundation
 import SwiftUI
 
-/// Minimal opt-in telemetry for debugging performance and usage.
-/// No personal data. No identifiers. Just app-level events.
+@MainActor
 final class Telemetry: ObservableObject {
 
-    struct Event: Identifiable {
-        let id = UUID()
-        let date: Date
-        let name: String
-        let detail: String
-    }
+    @Published private(set) var events: [TelemetryEvent] = []
 
-    @Published private(set) var events: [Event] = []
-
-    func log(_ name: String, _ detail: String = "") {
-        events.insert(Event(date: Date(), name: name, detail: detail), at: 0)
-
-        // Keep memory bounded.
-        if events.count > 200 {
-            events.removeLast(events.count - 200)
-        }
+    func log(_ message: String, source: String = "app") {
+        events.insert(TelemetryEvent(message: message, source: source, date: Date()), at: 0)
     }
 
     func clear() {
         events.removeAll()
     }
+}
+
+struct TelemetryEvent: Identifiable, Hashable {
+    let id = UUID()
+    let message: String
+    let source: String
+    let date: Date
 }

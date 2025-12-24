@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Settings/SettingsView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Experience",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Clear Local Telemetry",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 64
+        }
+      }
+    ]
+  },
+  "version": 1
+}

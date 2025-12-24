@@ -1,377 +1,239 @@
+//
+//  HomeView.swift
+//  Aquire
+//
+
 import SwiftUI
 
-@available(iOS 15.0, macOS 12.0, tvOS 15.0, *)
 struct HomeView: View {
-    let userEmail: String
-
     @EnvironmentObject private var store: StoreModel
+    @EnvironmentObject private var router: StorefrontRouter
+    @EnvironmentObject private var performance: PerformanceProfile
+    @EnvironmentObject private var telemetry: Telemetry
 
-    @AppStorage("Aquire_developerUnlocked")
-    private var developerUnlocked: Bool = false
+    @State private var selectedKey: String? = nil
 
-    @State private var showSettings: Bool = false
-    @State private var selectedProduct: Product?
-    @State private var secretTapCount: Int = 0
+    private var allowMotion: Bool { performance.currentTuning.animationLevel > 0 }
 
-    // MARK: - Derived
+    private var featured: [Product] { ProductCatalog.featured }
+    private var chipsets: [Product] { ProductCatalog.chipsets }
 
-    private var featuredProduct: Product? {
-        if let featured = store.featuredProduct {
-            return featured
-        } else if let firstVisible = store.visibleProducts.first {
-            return firstVisible
-        } else {
-            return products.first
-        }
+    private var wishlistProducts: [Product] {
+        Array(store.wishlist).compactMap { ProductCatalog.product(for: $0) }
     }
 
-    private var highlightProducts: [Product] {
-        let base = store.visibleProducts.isEmpty ? products : store.visibleProducts
-        return Array(base.prefix(10))
+    private var acquiredProducts: [Product] {
+        Array(store.acquired.keys).compactMap { ProductCatalog.product(for: $0) }
     }
-
-    private var acquiredCount: Int { store.acquiredProducts.count }
-    private var wishlistCount: Int { store.wishlistProducts.count }
-    private var ordersCount: Int { store.orders.count }
-
-    // MARK: - Body
 
     var body: some View {
-        #if os(tvOS)
-        tvOSBody
-        #else
-        standardBody
-        #endif
-    }
+        ScrollView {
+            LazyVStack(alignment: .leading, spacing: 16) {
 
-    // MARK: - iOS / macOS body
+                // Hero (tappable)
+                Button {
+                    telemetry.log("home_hero_tap", source: "foundation_hub")
+                    selectedKey = "foundation_hub"
+                } label: {
+                    AquireHeroCard(
+                        title: "Foundation Hub",
+                        subtitle: "Command surface for the Foundation ecosystem.",
+                        systemImage: "sparkles"
+                    )
+                }
+                .buttonStyle(.plain)
+                .pressable(0.985)
 
-    private var standardBody: some View {
-        ZStack {
-            AquireBackgroundView()
-                .ignoresSafeArea()
+                // Stats
+                LazyVGrid(columns: [
+                    GridItem(.flexible(), spacing: 12),
+                    GridItem(.flexible(), spacing: 12)
+                ], spacing: 12) {
 
-            ScrollView {
-                VStack(alignment: .leading, spacing: 24) {
-                    header
+                    AquireStatTile(title: "Wishlist", value: "\(store.wishlist.count)", systemImage: "bookmark")
+                    AquireStatTile(title: "Acquired", value: "\(store.acquired.count)", systemImage: "checkmark.seal")
+                    AquireStatTile(title: "Orders", value: "\(store.orders.count)", systemImage: "shippingbox")
+                    AquireStatTile(title: "Tier", value: performance.tier.rawValue.capitalized, systemImage: "gauge.with.dots.needle.50percent")
+                }
+                .animation(allowMotion ? .easeOut(duration: 0.25) : nil, value: store.wishlist.count)
+                .animation(allowMotion ? .easeOut(duration: 0.25) : nil, value: store.acquired.count)
+                .animation(allowMotion ? .easeOut(duration: 0.25) : nil, value: store.orders.count)
 
-                    if let hero = featuredProduct {
-                        ProductCard(product: hero)
-                            .onTapGesture {
-                                selectedProduct = hero
+                // Quick Actions
+                AquireSurface(cornerRadius: 24, padding: 14) {
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text("Quick Actions")
+                            .font(.system(size: 14, weight: .bold, design: .rounded))
+                            .foregroundColor(.white.opacity(0.9))
+
+                        HStack(spacing: 10) {
+                            HomeQuickActionButton(title: "Browse", icon: "square.grid.2x2") {
+                                telemetry.log("home_action", source: "browse")
+                                router.browse()
                             }
-                            .accessibilityElement(children: .combine)
-                            .accessibilityLabel("Featured device: \(hero.name)")
-                    }
-
-                    summaryRow
-
-                    if !highlightProducts.isEmpty {
-                        Text("Up next from Foundation")
-                            .font(.system(size: 16, weight: .semibold))
-                            .foregroundColor(.white)
-                            .padding(.top, 4)
-
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 14) {
-                                ForEach(highlightProducts, id: \.id) { product in
-                                    miniProductTile(product)
-                                        .onTapGesture {
-                                            selectedProduct = product
-                                        }
-                                }
+                            HomeQuickActionButton(title: "Chipsets", icon: "cpu") {
+                                telemetry.log("home_action", source: "chipsets")
+                                router.browse()
+                                // (optional) you can add a router category filter later
                             }
-                            .padding(.vertical, 4)
+                            HomeQuickActionButton(title: "Orders", icon: "shippingbox") {
+                                telemetry.log("home_action", source: "orders")
+                                router.orders()
+                            }
                         }
                     }
-
-                    Spacer(minLength: 20)
                 }
-                .padding(.horizontal, 20)
-                .padding(.top, 18)
-                .padding(.bottom, 40)
+
+                // Rails
+                ProductRail(
+                    title: "Featured",
+                    subtitle: "Top picks in your catalog",
+                    products: featured
+                ) { p in
+                    if let key = ProductCatalog.key(for: p) {
+                        telemetry.log("home_featured_tap", source: key)
+                        selectedKey = key
+                    }
+                }
+
+                ProductRail(
+                    title: "Foundation Silicon",
+                    subtitle: "Chipsets + compute tiles",
+                    products: chipsets
+                ) { p in
+                    if let key = ProductCatalog.key(for: p) {
+                        telemetry.log("home_chipset_tap", source: key)
+                        selectedKey = key
+                    }
+                }
+
+                if !wishlistProducts.isEmpty {
+                    ProductRail(
+                        title: "Wishlist",
+                        subtitle: "Saved for later",
+                        products: Array(wishlistProducts.prefix(12))
+                    ) { p in
+                        if let key = ProductCatalog.key(for: p) {
+                            telemetry.log("home_wishlist_rail_tap", source: key)
+                            selectedKey = key
+                        }
+                    }
+                }
+
+                if !acquiredProducts.isEmpty {
+                    ProductRail(
+                        title: "Acquired",
+                        subtitle: "Your owned devices",
+                        products: Array(acquiredProducts.prefix(12))
+                    ) { p in
+                        if let key = ProductCatalog.key(for: p) {
+                            telemetry.log("home_acquired_rail_tap", source: key)
+                            selectedKey = key
+                        }
+                    }
+                }
+
+                Spacer(minLength: 12)
+            }
+            .padding(16)
+        }
+        .background(AquireBackdrop().ignoresSafeArea())
+        .sheet(item: $selectedKey) { key in
+            if let product = ProductCatalog.product(for: key) {
+                ProductDetailView(product: product, showsCloseButton: true)
+                    .environmentObject(store)
+                    .environmentObject(telemetry)
+            } else {
+                VStack(spacing: 12) {
+                    Text("Missing Product")
+                        .font(.headline)
+                    Text("No catalog entry for key: \(key)")
+                        .foregroundStyle(.secondary)
+                }
+                .padding()
             }
         }
-        .sheet(isPresented: $showSettings) {
-            SettingsView()
-                .environmentObject(store)
-        }
-        .sheet(item: $selectedProduct) { product in
-            ProductDetailView(product: product)
-                .environmentObject(store)
+        .onAppear {
+            telemetry.log("screen_show", source: "Home")
         }
     }
+}
 
-    // MARK: - tvOS body
+// MARK: - Product Rail
 
-    private var tvOSBody: some View {
-        ZStack {
-            AquireBackgroundView()
-                .ignoresSafeArea()
+struct ProductRail: View {
+    let title: String
+    let subtitle: String?
+    let products: [Product]
+    let onTap: (Product) -> Void
 
-            VStack(alignment: .leading, spacing: 32) {
-                tvOSHeader
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
 
-                if let hero = featuredProduct {
-                    Button {
-                        selectedProduct = hero
-                    } label: {
-                        ProductCard(product: hero)
-                            .frame(maxWidth: 800)
-                            .frame(height: 360)
-                    }
-                    .buttonStyle(.plain)
-                }
+            HStack(alignment: .firstTextBaseline) {
+                Text(title)
+                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .foregroundColor(.white.opacity(0.95))
 
-                tvOSSummaryRow
-
-                if !highlightProducts.isEmpty {
-                    Text("Browse Devices")
-                        .font(.title3.weight(.semibold))
-                        .foregroundColor(.white)
-                        .padding(.leading, 60)
-
-                    ScrollView(.horizontal, showsIndicators: false) {
-                        HStack(spacing: 40) {
-                            ForEach(highlightProducts, id: \.id) { product in
-                                Button {
-                                    selectedProduct = product
-                                } label: {
-                                    tvOSMiniTile(product)
-                                }
-                                .buttonStyle(.plain)
-                                .focusable(true)
-                            }
-                        }
-                        .padding(.horizontal, 60)
-                        .padding(.vertical, 10)
-                    }
+                if let subtitle {
+                    Text(subtitle)
+                        .font(.system(size: 12, weight: .semibold, design: .rounded))
+                        .foregroundColor(.white.opacity(0.6))
+                        .padding(.leading, 6)
                 }
 
                 Spacer()
             }
-        }
-        .sheet(isPresented: $showSettings) {
-            SettingsView()
-                .environmentObject(store)
-        }
-        .sheet(item: $selectedProduct) { product in
-            ProductDetailView(product: product)
-                .environmentObject(store)
-        }
-    }
 
-    // MARK: - Shared pieces (header, stats, tiles)
-
-    private var header: some View {
-        HStack(alignment: .center, spacing: 14) {
-            VStack(alignment: .leading, spacing: 4) {
-                Text("Foundation Aquire")
-                    .font(.system(size: 22, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-
-                Text(userEmail.isEmpty ? "Guest session" : userEmail)
-                    .font(.system(size: 12, weight: .medium))
-                    .foregroundColor(.white.opacity(0.7))
-                    .lineLimit(1)
-                    .truncationMode(.middle)
-            }
-
-            Spacer()
-
-            Button {
-                incrementSecretTap()
-                showSettings = true
-            } label: {
-                HStack(spacing: 6) {
-                    if developerUnlocked {
-                        StatusChip(text: "DEV", style: .accent)
+            ScrollView(.horizontal, showsIndicators: false) {
+                LazyHStack(spacing: 12) {
+                    ForEach(products, id: \.name) { p in
+                        Button { onTap(p) } label: {
+                            ProductCard(product: p)
+                                .frame(width: 320)
+                        }
+                        .buttonStyle(.plain)
+                        .pressable(0.99)
                     }
-
-                    Image(systemName: "gearshape.fill")
-                        .font(.system(size: 18, weight: .semibold))
-                        .foregroundColor(.white.opacity(0.92))
                 }
-                .padding(.horizontal, 10)
-                .padding(.vertical, 8)
-                .background(
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .fill(Color.white.opacity(0.06))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 18, style: .continuous)
-                                .stroke(Color.white.opacity(0.2), lineWidth: 0.8)
-                        )
-                )
+                .padding(.horizontal, 2)
             }
-            .buttonStyle(.plain)
         }
     }
+}
 
-    private var tvOSHeader: some View {
-        HStack(alignment: .center, spacing: 20) {
-            VStack(alignment: .leading, spacing: 6) {
-                Text("Foundation Aquire")
-                    .font(.largeTitle.bold())
-                    .foregroundColor(.white)
+// MARK: - Quick Action Button
 
-                Text("Living room device surface")
-                    .font(.callout)
-                    .foregroundColor(.white.opacity(0.7))
-            }
+private struct HomeQuickActionButton: View {
+    let title: String
+    let icon: String
+    let action: () -> Void
 
-            Spacer()
-
-            Button {
-                incrementSecretTap()
-                showSettings = true
-            } label: {
-                HStack(spacing: 8) {
-                    if developerUnlocked {
-                        StatusChip(text: "DEV", style: .accent)
-                    }
-
-                    Image(systemName: "gearshape.fill")
-                        .font(.title3.weight(.semibold))
-                        .foregroundColor(.white)
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: 22, style: .continuous)
-                        .fill(Color.white.opacity(0.12))
-                )
-            }
-            .buttonStyle(.plain)
-            .padding(.trailing, 40)
-        }
-        .padding(.leading, 40)
-        .padding(.top, 40)
-    }
-
-    private func incrementSecretTap() {
-        secretTapCount += 1
-        if secretTapCount >= 7 {
-            developerUnlocked.toggle()
-            secretTapCount = 0
-        }
-    }
-
-    private var summaryRow: some View {
-        HStack(spacing: 12) {
-            statChip(title: "Wishlist", value: "\(wishlistCount)", icon: "heart.fill")
-            statChip(title: "Acquired", value: "\(acquiredCount)", icon: "shippingbox.fill")
-            statChip(title: "Orders", value: "\(ordersCount)", icon: "list.bullet.rectangle")
-        }
-    }
-
-    private var tvOSSummaryRow: some View {
-        HStack(spacing: 24) {
-            tvOSStatTile(title: "Wishlist", value: "\(wishlistCount)", icon: "heart.fill")
-            tvOSStatTile(title: "Acquired", value: "\(acquiredCount)", icon: "shippingbox.fill")
-            tvOSStatTile(title: "Orders", value: "\(ordersCount)", icon: "list.bullet.rectangle")
-        }
-        .padding(.horizontal, 60)
-    }
-
-    private func statChip(title: String, value: String, icon: String) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack(spacing: 6) {
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
                 Image(systemName: icon)
-                    .font(.system(size: 12, weight: .semibold))
+                    .font(.system(size: 13, weight: .bold))
                     .foregroundColor(.white.opacity(0.9))
-
-                Text(title.uppercased())
-                    .font(.system(size: 10, weight: .semibold))
-                    .foregroundColor(.white.opacity(0.7))
-            }
-
-            Text(value)
-                .font(.system(size: 18, weight: .bold))
-                .foregroundColor(.white)
-        }
-        .padding(.horizontal, 12)
-        .padding(.vertical, 10)
-        .liquidGlass(cornerRadius: 18)
-    }
-
-    private func tvOSStatTile(title: String, value: String, icon: String) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            HStack(spacing: 10) {
-                Image(systemName: icon)
-                    .font(.title2.weight(.semibold))
-                    .foregroundColor(.white)
-
                 Text(title)
-                    .font(.headline.weight(.semibold))
-                    .foregroundColor(.white.opacity(0.9))
+                    .font(.system(size: 13, weight: .bold, design: .rounded))
             }
-
-            Text(value)
-                .font(.title.weight(.bold))
-                .foregroundColor(.white)
+            .foregroundColor(.white.opacity(0.9))
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .background(
+                Capsule()
+                    .fill(Color.white.opacity(0.10))
+                    .overlay(Capsule().stroke(Color.white.opacity(0.18), lineWidth: 0.8))
+            )
         }
-        .padding(18)
-        .liquidGlass(cornerRadius: 26)
+        .buttonStyle(.plain)
+        .pressable(0.98)
     }
+}
 
-    private func miniProductTile(_ product: Product) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
-            HStack(spacing: 10) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 18, style: .continuous)
-                        .fill(Color.black.opacity(0.7))
+// MARK: - Allow .sheet(item:) on String?
 
-                    Image(systemName: product.imageSystemName)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 26, height: 26)
-                        .foregroundColor(.accentColor)
-                }
-                .frame(width: 48, height: 48)
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(product.name)
-                        .font(.system(size: 14, weight: .semibold))
-                        .foregroundColor(.white)
-                        .lineLimit(1)
-
-                    Text(product.price, format: .currency(code: "USD"))
-                        .font(.system(size: 12, weight: .medium))
-                        .foregroundColor(.white.opacity(0.8))
-                }
-
-                Spacer(minLength: 0)
-            }
-        }
-        .padding(12)
-        .liquidGlass(cornerRadius: 20)
-    }
-
-    private func tvOSMiniTile(_ product: Product) -> some View {
-        VStack(alignment: .leading, spacing: 10) {
-            ZStack {
-                RoundedRectangle(cornerRadius: 26, style: .continuous)
-                    .fill(Color.black.opacity(0.7))
-
-                Image(systemName: product.imageSystemName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 60, height: 60)
-                    .foregroundColor(.accentColor)
-            }
-            .frame(width: 160, height: 160)
-
-            Text(product.name)
-                .font(.headline.weight(.semibold))
-                .foregroundColor(.white)
-                .lineLimit(2)
-
-            Text(product.price, format: .currency(code: "USD"))
-                .font(.subheadline.weight(.medium))
-                .foregroundColor(.white.opacity(0.8))
-        }
-        .frame(width: 200)
-        .padding(16)
-        .liquidGlass(cornerRadius: 28)
-    }
+extension String: @retroactive Identifiable {
+    public var id: String { self }
 }

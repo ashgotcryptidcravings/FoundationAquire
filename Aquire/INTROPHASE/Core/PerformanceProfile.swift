@@ -1,199 +1,149 @@
 //
-//  DeviceTier.swift
+//  PerformanceProfile.swift
 //  Aquire
 //
-//  Created by Zero on 12/11/25.
-//
 
-
+import Foundation
 import SwiftUI
-import Combine
 
-/// Rough performance tiers used to decide how "fancy"
-/// the UI should be on a given device.
-enum DeviceTier {
-    case low
-    case medium
-    case high
-}
-
-/// A simple struct describing how intense the visuals should be.
-struct VisualTuning {
-    let blurStrength: CGFloat      // 0 = off
-    let shadowRadius: CGFloat      // in points
-    let animationLevel: Int        // 0 = off, 1 = subtle, 2 = full
-}
-
-/// User-facing performance preference.
-enum AquirePerformancePreference: String, CaseIterable, Identifiable {
-    case battery
-    case balanced
-    case cinematic
-
-    var id: String { rawValue }
-
-    var label: String {
-        switch self {
-        case .battery:   return "Battery Saver"
-        case .balanced:  return "Balanced"
-        case .cinematic: return "Cinematic"
-        }
-    }
-
-    var description: String {
-        switch self {
-        case .battery:
-            return "Fewer effects, best for older devices or long sessions."
-        case .balanced:
-            return "A mix of smooth performance and visual detail."
-        case .cinematic:
-            return "Maximum glass, motion, and depth on supported hardware."
-        }
-    }
-}
-
-/// Central performance + tuning manager.
-/// Combines device tier, user preference, and (later) runtime signals.
+@MainActor
 final class PerformanceProfile: ObservableObject {
 
-    // MARK: - Published
+    enum Tier: String, CaseIterable {
+        case cinematic
+        case balanced
+        case performance
+    }
 
-    @Published var preference: AquirePerformancePreference {
-        didSet {
-            defaults.set(preference.rawValue, forKey: Keys.preference)
-            objectWillChange.send()
+    struct Tuning: Equatable {
+        var animationLevel: Int = 1
+        var blurStrength: Double = 1.0
+
+        var allowHeavyBlur: Bool = true
+        var allowShadows: Bool = true
+        var shadowRadius: CGFloat = 12
+        var allowHighlightOverlay: Bool = true
+    }
+
+    @Published var currentTuning: Tuning = .init()
+    @Published var thermalState: ProcessInfo.ThermalState = .nominal
+    @Published var isLowPowerMode: Bool = false
+    @Published var tier: Tier = .balanced
+
+    /// “Throttle” = system is asking us to chill (thermal or low power).
+    var systemThrottleActive: Bool {
+        isLowPowerMode || thermalState == .serious || thermalState == .critical
+    }
+
+    init() {
+        startMonitoring()
+    }
+
+    func startMonitoring() {
+        let process = ProcessInfo.processInfo
+
+        thermalState = process.thermalState
+        isLowPowerMode = process.isLowPowerModeEnabled
+
+        NotificationCenter.default.addObserver(
+            forName: ProcessInfo.thermalStateDidChangeNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            guard let self else { return }
+            Task { @MainActor in
+                self.thermalState = process.thermalState
+                self.recomputeTier()
+            }
         }
-    }
 
-    @Published var autoTuneEnabled: Bool {
-        didSet {
-            defaults.set(autoTuneEnabled, forKey: Keys.autoTuneEnabled)
-            objectWillChange.send()
+        NotificationCenter.default.addObserver(
+            forName: .NSProcessInfoPowerStateDidChange,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            guard let self else { return }
+            Task { @MainActor in
+                self.isLowPowerMode = process.isLowPowerModeEnabled
+                self.recomputeTier()
+            }
         }
+
+        recomputeTier()
     }
 
-    /// Static classification of the current device.
-    /// This is intentionally rough – it's a starting heuristic.
-    let deviceTier: DeviceTier
-
-    // MARK: - Private
-
-    private let defaults: UserDefaults
-
-    private struct Keys {
-        static let preference      = "Aquire_perfPreference"
-        static let autoTuneEnabled = "Aquire_perfAutoTuneEnabled"
-    }
-
-    // MARK: - Init
-
-    init(defaults: UserDefaults = .standard) {
-        self.defaults = defaults
-
-        // Load stored preference (default = balanced)
-        if let raw = defaults.string(forKey: Keys.preference),
-           let pref = AquirePerformancePreference(rawValue: raw) {
-            self.preference = pref
+    private func recomputeTier() {
+        if isLowPowerMode {
+            tier = .performance
         } else {
-            self.preference = .balanced
+            switch thermalState {
+            case .serious, .critical:
+                tier = .performance
+            case .fair:
+                tier = .balanced
+            default:
+                tier = .cinematic
+            }
         }
 
-        // Load stored auto-tune flag (default = true)
-        if defaults.object(forKey: Keys.autoTuneEnabled) == nil {
-            self.autoTuneEnabled = true
-        } else {
-            self.autoTuneEnabled = defaults.bool(forKey: Keys.autoTuneEnabled)
-        }
-
-        self.deviceTier = PerformanceProfile.classifyCurrentDevice()
+        applyTuning(for: tier)
     }
 
-    // MARK: - Tuning
+    private func applyTuning(for tier: Tier) {
+        switch tier {
+        case .performance:
+            currentTuning = Tuning(
+                animationLevel: 0,
+                blurStrength: 0.0,
+                allowHeavyBlur: false,
+                allowShadows: false,
+                shadowRadius: 0,
+                allowHighlightOverlay: false
+            )
 
-    /// Current visual tuning derived from device tier + preference.
-    var currentTuning: VisualTuning {
-        // Base per-tier tuning
-        let base: VisualTuning
-        switch deviceTier {
-        case .low:
-            base = VisualTuning(
-                blurStrength: 0,
-                shadowRadius: 6,
-                animationLevel: 0
-            )
-        case .medium:
-            base = VisualTuning(
-                blurStrength: 8,
-                shadowRadius: 14,
-                animationLevel: 1
-            )
-        case .high:
-            base = VisualTuning(
-                blurStrength: 20,
-                shadowRadius: 24,
-                animationLevel: 2
-            )
-        }
-
-        // Adjust based on user preference
-        switch preference {
-        case .battery:
-            return VisualTuning(
-                blurStrength: max(0, base.blurStrength * 0.4),
-                shadowRadius: max(0, base.shadowRadius * 0.5),
-                animationLevel: min(base.animationLevel, 1)
-            )
         case .balanced:
-            return base
+            currentTuning = Tuning(
+                animationLevel: 1,
+                blurStrength: 0.55,
+                allowHeavyBlur: true,
+                allowShadows: true,
+                shadowRadius: 10,
+                allowHighlightOverlay: true
+            )
+
         case .cinematic:
-            return VisualTuning(
-                blurStrength: base.blurStrength * 1.3,
-                shadowRadius: base.shadowRadius * 1.2,
-                animationLevel: max(base.animationLevel, 2)
+            currentTuning = Tuning(
+                animationLevel: 2,
+                blurStrength: 1.0,
+                allowHeavyBlur: true,
+                allowShadows: true,
+                shadowRadius: 12,
+                allowHighlightOverlay: true
             )
         }
     }
+}
 
-    // MARK: - Device classification
-
-    private static func classifyCurrentDevice() -> DeviceTier {
-        #if os(iOS)
-        let identifier = hardwareIdentifier()
-
-        // Very rough sets – expand over time as needed.
-        let lowDevices: Set<String> = [
-            "iPhone10,1", "iPhone10,4", // 8
-            "iPhone10,2", "iPhone10,5", // 8 Plus
-            "iPhone10,3", "iPhone10,6", // X
-            "iPhone11,8"                // XR
-        ]
-
-        let highDevices: Set<String> = [
-            "iPhone15,2", "iPhone15,3", // 14 Pro / Pro Max
-            "iPhone16,1", "iPhone16,2"  // 15 Pro / Pro Max (example)
-        ]
-
-        if lowDevices.contains(identifier) {
-            return .low
-        } else if highDevices.contains(identifier) {
-            return .high
-        } else {
-            return .medium
+extension ProcessInfo.ThermalState {
+    var friendlyName: String {
+        switch self {
+        case .nominal: return "Nominal"
+        case .fair: return "Fair"
+        case .serious: return "Serious"
+        case .critical: return "Critical"
+        @unknown default: return "Unknown"
         }
-        #elseif os(macOS)
-        // Assume medium by default; Apple silicon can be treated as high later.
-        return .medium
-        #else
-        return .medium
-        #endif
     }
+}
 
-    private static func hardwareIdentifier() -> String {
-        var systemInfo = utsname()
-        uname(&systemInfo)
-        return withUnsafePointer(to: &systemInfo.machine) { ptr in
-            let int8Ptr = UnsafeRawPointer(ptr).assumingMemoryBound(to: CChar.self)
-            return String(cString: int8Ptr)
-        }
+// MARK: - Derived Visual Weights
+
+extension PerformanceProfile.Tuning {
+    var shadowStrength: CGFloat {
+        let b = blurStrength
+        if b < 0.15 { return 0.10 }
+        if b < 0.35 { return 0.25 }
+        if b < 0.60 { return 0.45 }
+        return 0.65
     }
 }

@@ -1,3 +1,8 @@
+//
+//  EmptyStateCard.swift
+//  Aquire
+//
+
 import SwiftUI
 
 struct EmptyStateCard: View {
@@ -6,25 +11,22 @@ struct EmptyStateCard: View {
     let message: String
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 10) {
+        AquireSurface {
+            VStack(spacing: 10) {
                 Image(systemName: icon)
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundColor(.white.opacity(0.9))
+                    .font(.system(size: 26, weight: .semibold))
+                    .foregroundColor(.white.opacity(0.7))
 
                 Text(title)
-                    .font(.system(size: 16, weight: .bold, design: .rounded))
+                    .font(.system(size: 14, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
 
-                Spacer()
+                Text(message)
+                    .font(.system(size: 12, weight: .regular, design: .rounded))
+                    .foregroundColor(.white.opacity(0.65))
+                    .multilineTextAlignment(.center)
             }
-
-            Text(message)
-                .font(.system(size: 13, weight: .regular, design: .rounded))
-                .foregroundColor(.white.opacity(0.7))
-                .fixedSize(horizontal: false, vertical: true)
+            .frame(maxWidth: .infinity)
         }
-        .padding(16)
-        .liquidGlass(cornerRadius: 22)
     }
 }

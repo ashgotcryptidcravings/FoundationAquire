@@ -1,0 +1,16 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Orders/OrdersView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "No orders yet.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 16
+        }
+      }
+    ]
+  },
+  "version": 1
+}

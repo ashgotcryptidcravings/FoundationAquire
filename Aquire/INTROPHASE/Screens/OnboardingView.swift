@@ -1,178 +1,94 @@
-//
-//  OnboardingView.swift
-//  Aquire
-//
-//  Created by Zero on 12/11/25.
-//
-
-
 import SwiftUI
 
-/// First-run onboarding + performance calibration.
-/// Right now it's intentionally simple:
-/// 1. Welcome
-/// 2. Performance preference (Battery / Balanced / Cinematic)
-/// 3. Auto-tune toggle + finish
 struct OnboardingView: View {
-    @EnvironmentObject private var session: SessionModel
+    @EnvironmentObject private var profile: AppProfile
     @EnvironmentObject private var performance: PerformanceProfile
-
-    @State private var step: Int = 0
+    @EnvironmentObject private var telemetry: Telemetry
 
     var body: some View {
         ZStack {
-            // Simple background for now; can be replaced with your liquid glass shell later.
-            LinearGradient(
-                colors: [
-                    Color.black,
-                    Color.blue.opacity(0.4),
-                    Color.purple.opacity(0.7)
-                ],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-            .ignoresSafeArea()
+            AquireBackgroundView()
 
-            VStack(spacing: 32) {
-                Spacer(minLength: 40)
+            VStack(spacing: 22) {
+                VStack(spacing: 10) {
+                    Text("Aquire")
+                        .font(.system(size: 34, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
 
-                switch step {
-                case 0:
-                    welcomeStep
-                case 1:
-                    performancePreferenceStep
-                default:
-                    autoTuneStep
+                    Text("Choose how the app should feel on this device.")
+                        .font(.system(size: 14, weight: .regular, design: .rounded))
+                        .foregroundColor(.white.opacity(0.75))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 24)
                 }
 
-                Spacer()
+                VStack(spacing: 14) {
+                    ForEach(AppProfile.UserExperience.allCases) { exp in
+                        Button {
+                            profile.experience = exp
+                        } label: {
+                            HStack(spacing: 14) {
+                                VStack(alignment: .leading, spacing: 4) {
+                                    Text(exp.title)
+                                        .font(.system(size: 16, weight: .semibold, design: .rounded))
+                                        .foregroundColor(.white)
 
-                controls
-            }
-            .padding(.horizontal, 24)
-            .padding(.bottom, 40)
-        }
-    }
+                                    Text(exp.subtitle)
+                                        .font(.system(size: 12, weight: .regular, design: .rounded))
+                                        .foregroundColor(.white.opacity(0.7))
+                                }
 
-    // MARK: - Steps
+                                Spacer()
 
-    private var welcomeStep: some View {
-        VStack(spacing: 16) {
-            Text("Welcome to Aquire")
-                .font(.largeTitle.bold())
-                .foregroundColor(.white)
-                .multilineTextAlignment(.center)
-
-            Text("We’ll take a moment to calibrate visuals to your device so everything feels smooth and intentional.")
-                .font(.body)
-                .foregroundColor(.white.opacity(0.8))
-                .multilineTextAlignment(.center)
-        }
-    }
-
-    private var performancePreferenceStep: some View {
-        VStack(spacing: 20) {
-            Text("Choose your visual style")
-                .font(.title2.bold())
-                .foregroundColor(.white)
-
-            Text("You can change this later in Settings.")
-                .font(.subheadline)
-                .foregroundColor(.white.opacity(0.7))
-
-            Picker("Performance Preference", selection: $performance.preference) {
-                ForEach(AquirePerformancePreference.allCases) { option in
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(option.label)
-                            .font(.body.weight(.medium))
-                        Text(option.description)
-                            .font(.caption)
-                            .foregroundColor(.secondary)
+                                if profile.experience == exp {
+                                    Image(systemName: "checkmark.circle.fill")
+                                        .foregroundColor(.purple)
+                                } else {
+                                    Image(systemName: "circle")
+                                        .foregroundColor(.white.opacity(0.25))
+                                }
+                            }
+                            .padding(16)
+                        }
+                        .pressable(0.97)
                     }
-                    .tag(option)
                 }
-            }
-            .pickerStyle(.inline)
-            .tint(.white)
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Color.black.opacity(0.4))
-            )
-        }
-    }
+                .padding(.horizontal, 18)
 
-    private var autoTuneStep: some View {
-        VStack(spacing: 20) {
-            Text("Let Aquire auto-tune visuals?")
-                .font(.title2.bold())
-                .foregroundColor(.white)
+                VStack(spacing: 10) {
+                    Toggle(isOn: $profile.telemetryOptIn) {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Share anonymous performance logs")
+                                .foregroundColor(.white)
+                                .font(.system(size: 14, weight: .semibold, design: .rounded))
 
-            Text("Aquire can monitor its own performance on this device and softly adjust effects to stay smooth. All tuning data stays on this device.")
-                .font(.body)
-                .foregroundColor(.white.opacity(0.8))
-
-            Toggle(isOn: $performance.autoTuneEnabled) {
-                Text("Enable auto-tuning on this device")
-                    .foregroundColor(.white)
-            }
-            .toggleStyle(.switch)
-            .tint(.white)
-            .padding()
-            .background(
-                RoundedRectangle(cornerRadius: 16, style: .continuous)
-                    .fill(Color.black.opacity(0.4))
-            )
-        }
-    }
-
-    // MARK: - Controls
-
-    private var controls: some View {
-        HStack {
-            if step > 0 {
-                Button {
-                    withAnimation(.easeOut(duration: 0.2)) {
-                        step -= 1
+                            Text("Only stores app events locally for now.")
+                                .foregroundColor(.white.opacity(0.65))
+                                .font(.system(size: 12, weight: .regular, design: .rounded))
+                        }
                     }
-                } label: {
-                    Text("Back")
-                        .font(.body)
-                        .foregroundColor(.white.opacity(0.8))
-                        .padding(.vertical, 10)
-                        .padding(.horizontal, 16)
-                        .background(
-                            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                                .strokeBorder(Color.white.opacity(0.4), lineWidth: 1)
-                        )
+                    .toggleStyle(.switch)
+                    .tint(.purple)
+                    .padding(.horizontal, 18)
+
+                    Button {
+                        profile.hasCompletedOnboarding = true
+                        telemetry.log("onboarding_complete",
+                                      source: "experience=\(profile.experience.rawValue), lowPower=\(performance.isLowPowerMode)")
+                    } label: {
+                        Text("Continue")
+                            .font(.system(size: 16, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
+                    }
+                    .pressable(0.96)
+                    .padding(.horizontal, 18)
                 }
-            }
 
-            Spacer()
-
-            Button {
-                advance()
-            } label: {
-                Text(step < 2 ? "Continue" : "Finish Setup")
-                    .font(.body.bold())
-                    .foregroundColor(.black)
-                    .padding(.vertical, 12)
-                    .padding(.horizontal, 22)
-                    .background(
-                        RoundedRectangle(cornerRadius: 14, style: .continuous)
-                            .fill(Color.white)
-                    )
+                Spacer(minLength: 0)
             }
-        }
-    }
-
-    private func advance() {
-        if step < 2 {
-            withAnimation(.easeOut(duration: 0.25)) {
-                step += 1
-            }
-        } else {
-            // Finalize onboarding
-            session.hasCompletedOnboarding = true
+            .padding(.top, 32)
         }
     }
 }

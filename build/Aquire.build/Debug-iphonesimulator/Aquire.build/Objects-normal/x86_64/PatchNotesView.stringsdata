@@ -1,0 +1,24 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Screens/Info/PatchNotesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "v%@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 18
+        }
+      },
+      {
+        "comment": "",
+        "key": "• %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 28
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/ADMINFRONT/Core/AdminFrontShellView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "AdminFront",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 20
+        }
+      }
+    ]
+  },
+  "version": 1
+}

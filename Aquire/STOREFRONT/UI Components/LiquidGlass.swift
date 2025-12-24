@@ -1,3 +1,11 @@
+//
+//  LiquidGlass.swift
+//  Aquire
+//
+//  Created by Zero on 12/15/25.
+//
+
+
 import SwiftUI
 
 extension View {

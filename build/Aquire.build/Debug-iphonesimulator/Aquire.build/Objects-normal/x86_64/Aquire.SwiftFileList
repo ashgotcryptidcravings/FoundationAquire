@@ -1,0 +1,56 @@
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/AppRoot.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/ContentView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/FeatureGates.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/Models.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/ModelViewerSheet.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/NarrativeModels.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/ProductCatalog.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/ProductDockBar.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StartupWarmup.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StorefrontDetailView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StorefrontRoute.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StorefrontRouter.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StorefrontShellView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Core/StoreModel.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Acquired/AcquiredView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/CLIENTFRONT/Core/ClientFrontShellView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Auth/LoginView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Browse/BrowseView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Browse/ProductDetailView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Home/HomeView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Info/InfoView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Info/PatchNotes.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Info/PatchNotesView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Info/StoryPagerView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Orders/OrdersView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Settings/AdminPanelView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Settings/DebugPanelView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Settings/SettingsView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/Wishlist/WishlistView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Screens/ModelQuickLookView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/ApplePayButton.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/AquireHeader.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/AquireHeroCard.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/AquireProductRow.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/AquireStatTile.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/AquireSurface.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/DebugOverlay.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/EmptyStateCard.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/ProductCard.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/ScreenScaffold.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/StatusPill.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/UI\ Components/UIHelpers.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/HOMEFRONT/Core/RootShellView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/HOMEFRONT/Core/SessionModel.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Utilities/Extentions.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/STOREFRONT/Utilities/SearchBarView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/INTROPHASE/Core/AppProfile.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/INTROPHASE/Core/PerformanceProfile.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/INTROPHASE/Core/Telemetry.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/INTROPHASE/Screens/OnboardingView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/AquireApp.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/Aquire/ADMINFRONT/Core/AdminFrontShellView.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/DerivedSources/CoreDataGenerated/Aquire/Item+CoreDataClass.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/DerivedSources/CoreDataGenerated/Aquire/Item+CoreDataProperties.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/DerivedSources/CoreDataGenerated/Aquire/Aquire+CoreDataModel.swift
+/Users/zero/Desktop/Desktop\ -\ Zero’s\ MacBook\ Pro/SequoiaTravelKit/Aquire\ copy/build/Aquire.build/Debug-iphonesimulator/Aquire.build/DerivedSources/GeneratedAssetSymbols.swift

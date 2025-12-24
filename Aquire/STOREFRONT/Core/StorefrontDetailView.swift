@@ -1,24 +1,19 @@
-//
-//  StorefrontDetailView.swift
-//  Aquire
-//
-//  Created by Zero on 12/12/25.
-//
-
-
 import SwiftUI
 
+/// Lightweight “detail hub” used when the shell wants a single place
+/// to render the currently-selected route.
+/// This file exists so we can keep StorefrontShellView clean.
 struct StorefrontDetailView: View {
-    let route: StorefrontRoute
+    @EnvironmentObject private var router: StorefrontRouter
 
     var body: some View {
         Group {
-            switch route {
+            switch router.route {
             case .home:
                 HomeView()
 
             case .browse:
-                BrowseView(products: Product.sampleProducts)
+                BrowseView(products: ProductCatalog.all)
 
             case .wishlist:
                 WishlistView()
@@ -36,6 +31,5 @@ struct StorefrontDetailView: View {
                 SettingsView()
             }
         }
-        .aquireBackground()
     }
 }
