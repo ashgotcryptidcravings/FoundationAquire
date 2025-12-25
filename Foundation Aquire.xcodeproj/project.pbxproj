@@ -13,22 +13,8 @@
 /* Begin PBXFileReference section */
 		72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation Aquire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
-		EEB5A2C22EE7BFA800EB430A /* Foundation AquireRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements"; sourceTree = "<group>"; };
+		EEB5A2C22EE7BFA800EB430A /* Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DAF9E9DB2EFD0A27008F3D21 /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Config/Info.plist",
-				Assets/AdvancaLink.usdz,
-				Assets/Assets.xcassets,
-				Assets/FoundationDock.usdz,
-				Utilities/LiquidGlass.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */ = {
@@ -39,19 +25,6 @@
 		DA6A8FAD2EEBC94400EB430A /* INTROPHASE */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = INTROPHASE;
-			sourceTree = "<group>";
-		};
-		DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CLIENTFRONT;
-			sourceTree = "<group>";
-		};
-		DA6A902F2EEBCBAF00EB430A /* STOREFRONT */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DAF9E9DB2EFD0A27008F3D21 /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */,
-			);
-			path = STOREFRONT;
 			sourceTree = "<group>";
 		};
 		DA6A90602EEBD16200EB430A /* ADMINFRONT */ = {
@@ -90,11 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */,
-				EEB5A2C22EE7BFA800EB430A /* Foundation AquireRelease.entitlements */,
+				EEB5A2C22EE7BFA800EB430A /* Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements */,
 				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
 				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
-				DA6A902F2EE7BFA800F3E164 /* STOREFRONT */,
-				DA6A8FB02EE7B6400EB430A /* CLIENTFRONT */,
 				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
 			);
 			path = Aquire;
@@ -116,8 +87,6 @@
 			fileSystemSynchronizedGroups = (
 				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
 				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
-				DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */,
-				DA6A902F2EEBCBAF00EB430A /* STOREFRONT */,
 				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
 			);
 			name = "Foundation Aquire";
@@ -310,6 +279,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				AUTOMATION_APPLE_EVENTS = YES;
+				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -317,7 +287,6 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PULJN6655X;
-				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
