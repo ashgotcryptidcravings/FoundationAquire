@@ -403,7 +403,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				INFOPLIST_FILE = FoundationAquire/Aquire/STOREFRONT/Config;
 				INFOPLIST_KEY_CFBundleDisplayName = "Foundation Aquire";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -465,7 +465,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_RESOURCE_ACCESS_PHOTO_LIBRARY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "/Users/zero/Desktop/Desktop - Zero’s MacBook Pro/SequoiaTravelKit/Aquire copy/Aquire/STOREFRONT/Config/Info.plist";
+				INFOPLIST_FILE = FoundationAquire/Aquire/STOREFRONT/Config;
 				INFOPLIST_KEY_CFBundleDisplayName = "Foundation Aquire";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
