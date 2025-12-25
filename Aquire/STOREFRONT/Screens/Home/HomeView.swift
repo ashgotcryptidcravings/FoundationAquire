@@ -231,9 +231,3 @@ private struct HomeQuickActionButton: View {
         .pressable(0.98)
     }
 }
-
-// MARK: - Allow .sheet(item:) on String?
-
-extension String: @retroactive Identifiable {
-    public var id: String { self }
-}
