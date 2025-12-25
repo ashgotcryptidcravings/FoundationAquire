@@ -15,134 +15,29 @@
 		DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		DA6A904D2EEBCBAF00EB430A /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"/Localized: Config/Aquire.entitlements",
-				"/Localized: Config/Info.plist",
-				Assets/AdvancaLink.usdz,
-				Assets/Assets.xcassets,
-				Assets/FoundationDock.usdz,
-				Config/Aquire.xcdatamodeld,
-				Core/AppRoot.swift,
-				Core/ContentView.swift,
-				Core/FeatureGates.swift,
-				Core/Models.swift,
-				Core/ModelViewerSheet.swift,
-				Core/NarrativeModels.swift,
-				Core/ProductCatalog.swift,
-				Core/ProductDockBar.swift,
-				Core/StartupWarmup.swift,
-				Core/StorefrontDetailView.swift,
-				Core/StorefrontRoute.swift,
-				Core/StorefrontRouter.swift,
-				Core/StorefrontShellView.swift,
-				Core/StoreModel.swift,
-				Screens/Acquired/AcquiredView.swift,
-				Screens/Auth/LoginView.swift,
-				Screens/Browse/BrowseView.swift,
-				Screens/Browse/ProductDetailView.swift,
-				Screens/Home/HomeView.swift,
-				Screens/Info/InfoView.swift,
-				Screens/Info/PatchNotes.swift,
-				Screens/Info/PatchNotesView.swift,
-				Screens/Info/StoryPagerView.swift,
-				Screens/ModelQuickLookView.swift,
-				Screens/Orders/OrdersView.swift,
-				Screens/Settings/AdminPanelView.swift,
-				Screens/Settings/DebugPanelView.swift,
-				Screens/Settings/SettingsView.swift,
-				Screens/Wishlist/WishlistView.swift,
-				"UI Components/ApplePayButton.swift",
-				"UI Components/AquireHeader.swift",
-				"UI Components/AquireHeroCard.swift",
-				"UI Components/AquireProductRow.swift",
-				"UI Components/AquireStatTile.swift",
-				"UI Components/AquireSurface.swift",
-				"UI Components/DebugOverlay.swift",
-				"UI Components/EmptyStateCard.swift",
-				"UI Components/ProductCard.swift",
-				"UI Components/ScreenScaffold.swift",
-				"UI Components/StatusPill.swift",
-				"UI Components/UIHelpers.swift",
-				Utilities/Extentions.swift,
-				Utilities/SearchBarView.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-		DA6A90672EEBD29E00EB430A /* Exceptions for "ADMINFRONT" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Core/AdminFrontShellView.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-		DA6A90682EEBD29E00EB430A /* Exceptions for "INTROPHASE" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Core/AppProfile.swift,
-				Core/PerformanceProfile.swift,
-				Core/Telemetry.swift,
-				Screens/OnboardingView.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-		DA6A90692EEBD29E00EB430A /* Exceptions for "CLIENTFRONT" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Core/ClientFrontShellView.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-		DA6A906C2EEBD2B700EB430A /* Exceptions for "HOMEFRONT" folder in "Foundation Aquire" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Core/RootShellView.swift,
-				Core/SessionModel.swift,
-			);
-			target = 72C9DF0A2EE7BFA800F3E164 /* Foundation Aquire */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DA6A906C2EEBD2B700EB430A /* Exceptions for "HOMEFRONT" folder in "Foundation Aquire" target */,
-			);
 			path = HOMEFRONT;
 			sourceTree = "<group>";
 		};
 		DA6A8FAD2EEBC94400EB430A /* INTROPHASE */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DA6A90682EEBD29E00EB430A /* Exceptions for "INTROPHASE" folder in "Foundation Aquire" target */,
-			);
 			path = INTROPHASE;
 			sourceTree = "<group>";
 		};
 		DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DA6A90692EEBD29E00EB430A /* Exceptions for "CLIENTFRONT" folder in "Foundation Aquire" target */,
-			);
 			path = CLIENTFRONT;
 			sourceTree = "<group>";
 		};
 		DA6A902F2EEBCBAF00EB430A /* STOREFRONT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DA6A904D2EEBCBAF00EB430A /* Exceptions for "STOREFRONT" folder in "Foundation Aquire" target */,
-			);
 			path = STOREFRONT;
 			sourceTree = "<group>";
 		};
 		DA6A90602EEBD16200EB430A /* ADMINFRONT */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				DA6A90672EEBD29E00EB430A /* Exceptions for "ADMINFRONT" folder in "Foundation Aquire" target */,
-			);
 			path = ADMINFRONT;
 			sourceTree = "<group>";
 		};
@@ -198,6 +93,13 @@
 				72C9DF092EE7BFA800F3E164 /* Resources */,
 			);
 			buildRules = (
+			);
+			fileSystemSynchronizedGroups = (
+				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
+				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
+				DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */,
+				DA6A902F2EEBCBAF00EB430A /* STOREFRONT */,
+				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
 			);
 			name = "Foundation Aquire";
 			productName = Aquire;
