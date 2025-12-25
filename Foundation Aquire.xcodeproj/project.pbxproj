@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DA6A90412EEBCBAF00EB430A /* AquireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */; };
+		DABF26FB2EFD3F8C00672092 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = DABF26FA2EFD3F8C00672092 /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation Aquire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
+		DABF26FA2EFD3F8C00672092 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		EEB5A2C22EE7BFA800EB430A /* Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
 				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
 				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
+				DABF26FA2EFD3F8C00672092 /* AppIcon.icon */,
 			);
 			path = Aquire;
 			sourceTree = "<group>";
@@ -130,6 +133,7 @@
 		72C9DF092EE7BFA800F3E164 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				DABF26FB2EFD3F8C00672092 /* AppIcon.icon in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
