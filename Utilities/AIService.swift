@@ -11,7 +11,7 @@ final class AIService {
     /// Replace the body of this method with an on-device FoundationModels call when you opt into the new SDK.
     func generateShortSummary(for name: String, description: String) async -> String {
         // Fast heuristic: keep first sentence, append short features bullet.
-        let firstSentence = description.split(whereSeparator: { $0 == "." || $0 == "!" || $0 == "?" }, maxSplits: 1, omittingEmptySubsequences: true).first?.trimmingCharacters(in: .whitespacesAndNewlines) ?? description
+        let firstSentence = description.split(maxSplits: 1, omittingEmptySubsequences: true, whereSeparator: { $0 == "." || $0 == "!" || $0 == "?" }).first?.trimmingCharacters(in: .whitespacesAndNewlines) ?? description
 
         let features = [
             "Compact, modern design",

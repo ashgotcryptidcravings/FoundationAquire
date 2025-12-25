@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.0</string>
+	<key>CFBundleVersion</key>
+	<string>2</string>
+
+	<!-- Privacy usage descriptions -->
+	<key>NSCameraUsageDescription</key>
+	<string>Required to capture product images and enable AR preview.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Required to save or load product images for preview and sharing.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Required for voice interactions and AR audio recording features.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Used to provide location-based product availability and AR placement.</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>To help with optimization, UI/UX Mapping</string>
+
+	<!-- App supports scenes -->
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict/>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

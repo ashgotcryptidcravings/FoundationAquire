@@ -13,6 +13,7 @@
 /* Begin PBXFileReference section */
 		72C9DF0B2EE7BFA800F3E164 /* Foundation Aquire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Foundation Aquire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquireApp.swift; sourceTree = "<group>"; };
+		EEB5A2C22EE7BFA800EB430A /* Foundation AquireRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -89,10 +90,11 @@
 			isa = PBXGroup;
 			children = (
 				DA6A900B2EEBCBAF00EB430A /* AquireApp.swift */,
+				EEB5A2C22EE7BFA800EB430A /* Foundation AquireRelease.entitlements */,
 				DA6A90602EEBD16200EB430A /* ADMINFRONT */,
 				DA6A8FAD2EEBC94400EB430A /* INTROPHASE */,
-				DA6A902F2EEBCBAF00EB430A /* STOREFRONT */,
-				DA6A8FB02EEBCB6400EB430A /* CLIENTFRONT */,
+				DA6A902F2EE7BFA800F3E164 /* STOREFRONT */,
+				DA6A8FB02EE7B6400EB430A /* CLIENTFRONT */,
 				DA6A8FA62EEBBF2100EB430A /* HOMEFRONT */,
 			);
 			path = Aquire;
@@ -206,7 +208,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Aquire/STOREFRONT/Config/;
+				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -274,7 +276,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_ENTITLEMENTS = Aquire/STOREFRONT/Config/;
+				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -311,10 +313,11 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = Alpha;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PULJN6655X;
+				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
@@ -331,7 +334,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = /Users/zero/Desktop/AppIcon.icon;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
@@ -370,11 +373,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				AUTOMATION_APPLE_EVENTS = YES;
-				CODE_SIGN_ENTITLEMENTS = Aquire/STOREFRONT/Config/;
+				CODE_SIGN_ENTITLEMENTS = "Aquire/STOREFRONT/Config/Foundation AquireRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = Alpha;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PULJN6655X;
@@ -399,7 +402,7 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = /Users/zero/Desktop/AppIcon.icon;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
