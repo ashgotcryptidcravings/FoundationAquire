@@ -224,7 +224,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 72C9DF022EE7BFA800F3E164;
 			preferredProjectObjectVersion = 90;
