@@ -6,7 +6,7 @@ struct AquireApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RootShellView()
+            OnboardingView()
                 .environmentObject(session)
                 // NOTE: App-level objects like AppProfile, PerformanceProfile, and
                 // Telemetry are intentionally NOT created here to avoid work on
